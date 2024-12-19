@@ -1,4 +1,4 @@
-class LSmash < Formula
+class Obuparse < Formula
   homepage "https://github.com/vimeo/l-smash"
   license "ISC"
   head "https://github.com/vimeo/l-smash.git"
