@@ -1,4 +1,4 @@
-class VapourSynthLsmas < Formula
+class VapoursynthLsmas < Formula
     homepage "https://github.com/HomeOfAviSynthPlusEvolution/L-SMASH-Works"
     license "ISC"
     head "https://github.com/HomeOfAviSynthPlusEvolution/L-SMASH-Works.git"
