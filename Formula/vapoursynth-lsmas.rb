@@ -11,8 +11,8 @@ class VapoursynthLsmas < Formula
   depends_on "ffmpeg"
 
   def install
-    inreplace "VapourSynth/meson.build", /vapoursynth_dep *. *get_pkgconfig_variable *( *'libdir' *)/, "'#{lib}'"
     Dir.chdir "VapourSynth" do
+      inreplace "meson.build", "vapoursynth_dep.get_pkgconfig_variable('libdir')", "'#{lib}'"
       system "meson", "setup", *std_meson_args, "build"
       system "meson", "compile", "-C", "build"
       system "meson", "install", "-C", "build"
