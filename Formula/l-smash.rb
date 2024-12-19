@@ -3,6 +3,7 @@ class LSmash < Formula
   license "ISC"
   head "https://github.com/vimeo/l-smash.git"
 
+  depends_on "obuparse"
   depends_on "gnu-sed" => :build
   
   def install
