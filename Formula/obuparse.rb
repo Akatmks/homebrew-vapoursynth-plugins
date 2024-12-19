@@ -1,10 +1,9 @@
 class Obuparse < Formula
-  homepage "https://github.com/vimeo/l-smash"
+  homepage "https://github.com/dwbuiten/obuparse"
   license "ISC"
-  head "https://github.com/vimeo/l-smash.git"
+  head "https://github.com/dwbuiten/obuparse.git"
     
   def install
-    system "make", "PREFIX=#{prefix}", "LIBSUF=.dylib", "LDFLAGS=", "install"
-    system "make", "PREFIX=#{prefix}", "LIBSUF=.dylib", "LDFLAGS=", "install-header"
+    system "make", "PREFIX=#{prefix}", "LIBSUF=.dylib", "LDFLAGS=", "install", "install-header", "install-tools"
   end
 end
