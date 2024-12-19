@@ -4,7 +4,7 @@ class Obuparse < Formula
   head "https://github.com/vimeo/l-smash.git"
     
   def install
-    system "make", "LIBSUF=.dylib", "LDFLAGS="
+    system "make", "PREFIX=#{prefix}", "LIBSUF=.dylib", "LDFLAGS="
     lib.install "libobuparse.dylib"
     lib.install "libobuparse.a"
     include.install "obuparse.h"
