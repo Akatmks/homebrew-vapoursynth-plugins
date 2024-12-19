@@ -9,7 +9,7 @@ class VapoursynthLsmas < Formula
 
   def install
     Dir.chdir "VapourSynth"
-    system "meson", "setup", "--prefix=#{prefix}", "build"
+    system "meson", "setup", *std_meson_args, "build"
     system "meson", "compile", "-C", "build"
     system "meson", "install", "-C", "build"
   end

@@ -8,7 +8,7 @@ class LSmash < Formula
   
   def install
     system "gsed", "-i", "-e", "s/\\bsed\\b/gsed/g", "configure"
-    system "./configure", "--prefix=#{prefix}"
+    system "./configure", *std_configure_args
     system "make", "install"
   end
 end
