@@ -7,7 +7,7 @@ class LSmash < Formula
   depends_on "gnu-sed" => :build
   
   def install
-    system "gsed", "-i", "-e", "s/\\bsed\\b/gsed/g", "configure"
+    inreplace "configure", /\bsed\b/, "gsed"
     system "./configure", "--prefix=#{prefix}", "--libdir=#{lib}"
     system "make", "install"
   end
