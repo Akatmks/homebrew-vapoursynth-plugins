@@ -4,6 +4,7 @@ class VapoursynthLsmas < Formula
   head "https://github.com/HomeOfAviSynthPlusEvolution/L-SMASH-Works.git"
 
   depends_on "meson" => :build
+  depends_on "ninja" => :build
   depends_on "vapoursynth"
   depends_on "l-smash"
   depends_on "ffmpeg"
