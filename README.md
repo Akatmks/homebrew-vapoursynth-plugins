@@ -6,12 +6,12 @@ You may also try out other people's taps. A quick Google found me [Bl4Cc4t's](ht
 
 To install L-SMASH:  
 ```sh
-brew tap Akatmks/vsplugins
+brew tap Akatmks/vapoursynth-plugins
 brew install --HEAD vapoursynth-lsmas
 ```
 
 Or to install only L-SMASH but not VapourSynth plugin:  
 ```sh
-brew tap Akatmks/vsplugins
+brew tap Akatmks/vapoursynth-plugins
 brew install --HEAD l-smash
 ```
