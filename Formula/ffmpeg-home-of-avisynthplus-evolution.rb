@@ -6,7 +6,7 @@ class FfmpegHomeOfAvisynthplusEvolution < Formula
   keg_only "avoid conflicts with upstream"
 
   def install
-    system "./configure", "--enable-gpl", "--enable-version3", "--enable-nonfree", "--disable-debug", "--prefix=#{prefix}", "--libdir=#{lib}"
+    system "./configure", "--enable-gpl", "--enable-version3", "--disable-debug", "--prefix=#{prefix}", "--libdir=#{lib}"
     system "make", "install"
   end
 end
