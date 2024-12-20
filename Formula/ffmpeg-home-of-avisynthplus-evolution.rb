@@ -1,4 +1,4 @@
-class FFmpegHomeOfAvisynthplusEvolution < Formula
+class FfmpegHomeOfAvisynthplusEvolution < Formula
   homepage "https://github.com/HomeOfAviSynthPlusEvolution/FFmpeg"
   license "GPL-3.0-or-later"
   head "https://github.com/HomeOfAviSynthPlusEvolution/FFmpeg.git"
