@@ -4,7 +4,7 @@ class FfmpegHomeOfAvisynthplusEvolution < Formula
   head "https://github.com/HomeOfAviSynthPlusEvolution/FFmpeg.git"
 
   def install
-    system "./configure", "--enable-gpl", "--enable-version3", "--enable-nonfree", "--disable-debug", "--prefix=#{prefix}", "--libdir=#{libdir}"
+    system "./configure", "--enable-gpl", "--enable-version3", "--enable-nonfree", "--disable-debug", "--prefix=#{prefix}", "--libdir=#{lib}"
     system "make", "install"
   end
 end
