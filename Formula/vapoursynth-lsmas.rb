@@ -1,6 +1,8 @@
 class VapoursynthLsmas < Formula
   homepage "https://github.com/HomeOfAviSynthPlusEvolution/L-SMASH-Works"
   license "ISC"
+  url "https://github.com/HomeOfAviSynthPlusEvolution/L-SMASH-Works/archive/refs/tags/1194.0.0.0.tar.gz"
+  sha256 "bd5f6581e2dea4883a7a12ef95b9880d8ce43251a2744e27bcfe8f40257d9b57"
   head "https://github.com/HomeOfAviSynthPlusEvolution/L-SMASH-Works.git"
 
   depends_on "meson" => :build
