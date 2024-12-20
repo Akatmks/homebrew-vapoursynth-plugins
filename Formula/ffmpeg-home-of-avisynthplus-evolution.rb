@@ -1,0 +1,10 @@
+class FFmpegHomeOfAvisynthplusEvolution < Formula
+  homepage "https://github.com/HomeOfAviSynthPlusEvolution/FFmpeg"
+  license "GPL-3.0-or-later"
+  head "https://github.com/HomeOfAviSynthPlusEvolution/FFmpeg.git"
+
+  def install
+    system "./configure", "--enable-gpl", "--enable-version3", "--enable-nonfree", *std_configure_args
+    system "make", "install"
+  end
+end

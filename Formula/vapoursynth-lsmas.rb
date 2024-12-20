@@ -8,7 +8,7 @@ class VapoursynthLsmas < Formula
   depends_on "pkgconf" => :build
   depends_on "vapoursynth"
   depends_on "l-smash"
-  depends_on "ffmpeg@6"
+  depends_on "ffmpeg-home-of-avisynthplus-evolution"
 
   def install
     Dir.chdir "VapourSynth" do
