@@ -9,10 +9,4 @@ class FfmpegHomeOfAvisynthplusEvolution < Formula
     system "./configure", "--enable-gpl", "--enable-version3", "--enable-nonfree", "--disable-debug", "--prefix=#{prefix}", "--libdir=#{lib}"
     system "make", "install"
   end
-
-  def caveats
-    on_macos do
-      "ffmpeg-home-of-avisynthplus-evolution is keg-only to avoid conflicts with upstream."
-    end
-  end
 end
