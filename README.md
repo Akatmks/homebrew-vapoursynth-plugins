@@ -4,7 +4,7 @@ At the moment, this tap only supports [L-SMASH](https://github.com/HomeOfAviSynt
 
 You may also want to try out other people's taps. A quick Google found me [Bl4Cc4t's](https://github.com/Bl4Cc4t/homebrew-vsplugins) and [XiNGRZ's](https://github.com/xingrz/homebrew-vsplugins) taps. Be aware that some plugins in either of those taps are outdated, such as lsmas. For this tap, Akatsumekusa will try to maintain it as long as Akatmks remains active.  
 
-To install L-SMASH compiled with [HomeOfAviSynthPlusEvolution/FFmpeg](https://github.com/HomeOfAviSynthPlusEvolution/FFmpeg):  
+To install L-SMASH compiled with [HomeOfAviSynthPlusEvolution/FFmpeg](https://github.com/HomeOfAviSynthPlusEvolution/FFmpeg/tree/custom-patches-for-lsmashsource):  
 ```sh
 brew tap Akatmks/vapoursynth-plugins
 brew install --HEAD vapoursynth-lsmas
