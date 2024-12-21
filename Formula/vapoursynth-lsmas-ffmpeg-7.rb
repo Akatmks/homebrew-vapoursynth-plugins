@@ -1,4 +1,4 @@
-class VapoursynthLsmas < Formula
+class VapoursynthLsmasFfmpeg7 < Formula
   homepage "https://github.com/HomeOfAviSynthPlusEvolution/L-SMASH-Works"
   license "ISC"
   head "https://github.com/HomeOfAviSynthPlusEvolution/L-SMASH-Works.git"
