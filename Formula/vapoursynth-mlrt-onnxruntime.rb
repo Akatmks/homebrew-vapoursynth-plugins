@@ -11,7 +11,9 @@ class VapoursynthMlrtOnnxruntime < Formula
   depends_on "protobuf"
 
   def install
-    system "cmake", "-S", ".", "-B", "build", "-LA", *std_cmake_args, "-DCMAKE_CXX_STANDARD=20", "-DENABLE_CORMEL=ON"
-    system "cmake", "--install", "build"
+    Dir.chdir "vsort" do
+      system "cmake", "-S", ".", "-B", "build", "-LA", *std_cmake_args, "-DCMAKE_CXX_STANDARD=20", "-DENABLE_CORMEL=ON"
+      system "cmake", "--install", "build"
+    end
   end
 end
