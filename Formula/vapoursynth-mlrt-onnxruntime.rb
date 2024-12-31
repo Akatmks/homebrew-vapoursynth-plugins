@@ -13,6 +13,7 @@ class VapoursynthMlrtOnnxruntime < Formula
   def install
     Dir.chdir "vsort" do
       system "cmake", "-S", ".", "-B", "build", "-LA", *std_cmake_args, "-DCMAKE_CXX_STANDARD=20", "-DENABLE_CORMEL=ON"
+      system "cmake", "--build", "build"
       system "cmake", "--install", "build"
     end
   end
