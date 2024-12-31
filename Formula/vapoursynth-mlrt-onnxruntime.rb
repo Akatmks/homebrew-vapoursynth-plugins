@@ -5,6 +5,7 @@ class VapoursynthMlrtOnnxruntime < Formula
 
   depends_on "cmake" => :build
   depends_on "ninja" => :build
+  depends_on "pkgconf" => :build
   depends_on "vapoursynth"
   depends_on "onnxruntime"
   depends_on "onnx"
