@@ -7,6 +7,7 @@ class VapoursynthResize2 < Formula
   depends_on "cmake" => :build
   depends_on "pkgconf" => :build
   depends_on "vapoursynth"
+  depends_on "zimg"
 
   def install
     system "meson", "setup", *std_meson_args, "build"
