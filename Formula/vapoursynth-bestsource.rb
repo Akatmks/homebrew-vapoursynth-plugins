@@ -11,6 +11,7 @@ class VapoursynthBestsource < Formula
   depends_on "xxhash"
 
   def install
+    inreplace "meson.build", "vapoursynth_dep.get_variable(pkgconfig: 'libdir')", "'#{lib}'"
     system "meson", "setup", *std_meson_args, "build"
     system "meson", "compile", "-C", "build"
     system "meson", "install", "-C", "build"
