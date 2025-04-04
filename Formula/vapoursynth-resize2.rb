@@ -10,6 +10,7 @@ class VapoursynthResize2 < Formula
 
   def install
     inreplace "subprojects/packagefiles/zimg/meson.build", "NEON_CFLAGS = ['-march=armv7-a', '-mfpu=neon-vfpv4']", "NEON_CFLAGS = ['-march=armv7-a']"
+    inreplace "meson.build", "vapoursynth_dep.get_variable(pkgconfig: 'libdir')", "'#{lib}'"
     system "meson", "setup", "--prefix=#{prefix}", "--libdir=#{lib}", "--buildtype=release", "build"
     system "meson", "compile", "-C", "build"
     system "meson", "install", "-C", "build"
