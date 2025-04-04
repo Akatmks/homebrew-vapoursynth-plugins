@@ -4,7 +4,7 @@ class VapoursynthResize2 < Formula
   head "https://github.com/Jaded-Encoding-Thaumaturgy/vapoursynth-resize2.git"
 
   depends_on "meson" => :build
-  depends_on "cmake" => :build
+  depends_on "ninja" => :build
   depends_on "pkgconf" => :build
   depends_on "vapoursynth"
 
