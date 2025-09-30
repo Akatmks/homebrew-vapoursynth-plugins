@@ -12,7 +12,7 @@ brew tap Akatmks/vapoursynth-plugins
 brew install --HEAD vapoursynth-bestsource
 ```
 
-lsmas can be a little bit dedicate. From my own testing in mid 2025, it looks like lsmas with FFmpeg 6 is the only version that can seek accurately. Updates and fixes happen all the time in the original lsmas repository so your mileage may vary.  
+lsmas can be a little bit dedicate. From my own testing in mid 2025, it looks like lsmas with FFmpeg 6 is the only version that can seek accurately. Updates and fixes happen all the time in the original lsmas repository so your mileage may vary. <sub><sup><sub>Or you can use BestSource above or ffms2 below.</sub></sup></sub>  
 
 To install lsmas compiled with [HomeOfAviSynthPlusEvolution/FFmpeg](https://github.com/HomeOfAviSynthPlusEvolution/FFmpeg/tree/custom-patches-for-lsmashsource):  
 ```sh
@@ -55,3 +55,4 @@ mkdir -p "$(brew --prefix)/lib/vapoursynth"
 brew install ffms2
 ln -s "$(brew --prefix)/lib/libffms2.dylib" "$(brew --prefix)/lib/vapoursynth/ffms2.dylib"
 ```
+
