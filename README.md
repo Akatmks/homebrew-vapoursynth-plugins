@@ -4,6 +4,8 @@ At the moment, this tap only supports [BestSource](https://github.com/vapoursynt
 
 You may also want to try out other people's taps. A quick Google search found me [Bl4Cc4t's](https://github.com/Bl4Cc4t/homebrew-vsplugins) and [XiNGRZ's](https://github.com/xingrz/homebrew-vsplugins) taps. Be aware that some plugins in either of those taps are outdated, such as lsmas. For this tap, Akatsumekusa will try to maintain it as long as Akatsumekusa remains active.  
 
+In addition to Homebrew taps, [here](https://github.com/Stefan-Olt/vs-plugin-build)'s a repository distributing prebuilt binaries from Stefan-Olt. This repository is said to be very helpful.
+
 To install BestSource:  
 
 ```sh
@@ -55,5 +57,6 @@ mkdir -p "$(brew --prefix)/lib/vapoursynth"
 brew install ffms2
 ln -s "$(brew --prefix)/lib/libffms2.dylib" "$(brew --prefix)/lib/vapoursynth/ffms2.dylib"
 ```
+
 
 
