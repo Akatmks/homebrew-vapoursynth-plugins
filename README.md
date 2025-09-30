@@ -7,30 +7,42 @@ You may also want to try out other people's taps. A quick Google found me [Bl4Cc
 To install BestSource:  
 
 ```sh
+mkdir -p "$(brew --prefix)/lib/vapoursynth"
 brew tap Akatmks/vapoursynth-plugins
 brew install --HEAD vapoursynth-bestsource
 ```
 
 To install L-SMASH compiled with [HomeOfAviSynthPlusEvolution/FFmpeg](https://github.com/HomeOfAviSynthPlusEvolution/FFmpeg/tree/custom-patches-for-lsmashsource):  
 ```sh
+mkdir -p "$(brew --prefix)/lib/vapoursynth"
 brew tap Akatmks/vapoursynth-plugins
 brew install --HEAD vapoursynth-lsmas
 ```
 
 To install L-SMASH compiled with ffmpeg version 7:  
 ```sh
+mkdir -p "$(brew --prefix)/lib/vapoursynth"
 brew tap Akatmks/vapoursynth-plugins
 brew install --HEAD vapoursynth-lsmas-ffmpeg-7
 ```
 
 To install L-SMASH compiled with ffmpeg version 6:  
 ```sh
+mkdir -p "$(brew --prefix)/lib/vapoursynth"
 brew tap Akatmks/vapoursynth-plugins
 brew install --HEAD vapoursynth-lsmas-ffmpeg-6
 ```
 
 Or to install only L-SMASH but not the VapourSynth plugin:  
 ```sh
+mkdir -p "$(brew --prefix)/lib/vapoursynth"
 brew tap Akatmks/vapoursynth-plugins
 brew install --HEAD l-smash
+```
+
+At last, this is not a part of this tap, but for completeness:  
+```sh
+mkdir -p "$(brew --prefix)/lib/vapoursynth"
+brew install ffms2
+ln -s "$(brew --prefix)/lib/libffms2.dylib" "$(brew --prefix)/lib/vapoursynth/ffms2.dylib"
 ```
